@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import { useCollection } from 'react-firebase-hooks/firestore';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import {collection, orderBy, limit, query, addDoc, serverTimestamp} from 'firebase/firestore';
+import { GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
+import {db,auth} from './firebase';
+import {useEffect, useRef, useState} from 'react';
 import './App.css';
 
 function App() {
+ 
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ 
     </div>
   );
+
 }
 
 export default App;
