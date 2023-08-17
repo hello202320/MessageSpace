@@ -1,38 +1,229 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none !important;
+    width: 90% !important;
   }
+  .form-container{
+      max-width: none !important;
+      width: 90% !important;
+  }
+
+}
+html,
+body {
+margin: 0;
+padding: 0;
+background-color: #2F3136;
+/* background-color:#202225; */
+color: 	#DCDDDE;
+font-family: 'PT Sans', sans-serif;
+font-size: 15px;
+/*font-family: 'Roboto', sans-serif;*/
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.container {
+  width: 60%;
+  height: 85vh;
+  margin: auto;
+  display:flex;
   flex-direction: column;
+  /* background-color: #2f3136; */
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.container img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.form-container {
+  width: 60%;
+  margin: auto;
+}
+
+.form-content {
+  display: flex;
+  background-color: #36393F;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+.form-container button{
+  color: #FFFFFF;
+  border-radius: 50%;
+  height: 40px;
+  width:40px;
+  margin-top: 8px;
+  background-color: #5865F2;
+  transition: background-color 0.3s, color 0.3s;
+  outline: none;
+  border: none;
+  margin-right: 8px;
+}
+
+.form-container button:hover {
+  background-color: #424bb4;
+}
+svg{
+  font-size: 20px;
+}
+.input-section {
+  display: flex;
   align-items: center;
+  padding: 10px;
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-right: 10px;
+}
+
+.circle:hover{
+  background-color: #8E9297;
+}
+
+.plus {
+  font-size: 20px;
+  font-weight: bold;
+  color: #36393F;
+}
+
+.textarea-section {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+textarea {
+  background-color: #36393F;
+  font-size: 15px;
   color: white;
+  caret-color: white;
+  width: 90%;
+  border: 2px solid #36393F;
+  border-radius: 7px;
+  padding: 8px;
+  overflow-y: scroll;
+  resize: none;
+  font-family: 'PT Sans', sans-serif;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: none; 
 }
 
-.App-link {
-  color: #61dafb;
+textarea::-webkit-scrollbar{
+  display:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.message-content{
+  display: flex;
+	margin-top: 10px;
 }
+
+.message-content-recieved{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.center{
+  align-items: center;
+}
+.reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.date{
+	color: #8E9297;
+	font-size: 12px;
+}
+.file{
+  color: #8E9297;
+	font-size: 15px;
+}
+
+.username{
+  color:#FFFFFF;
+  font-size: medium;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+a {
+  color: #00AFF4;
+}
+
+.relative{
+  position: relative;
+}
+.clear-button {
+  background-color: transparent;
+  border: 2px dashed #ED4245;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.clear-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #ED4245;
+}
+
+
+.sent{
+  max-width: 70%;
+  margin-left: auto; 
+  margin-right: 0;
+  margin-top: 1px;
+  padding:10px;
+}
+
+.recieved{
+  max-width: 70%;
+  padding:10px;
+  margin-bottom: 1px;
+  margin-right: auto;
+  margin-top: 1px;
+}
+
+
+.profile-img img{
+  height: 35px;
+  width:35px;
+  border-radius:50%;
+  margin-right: 3px;
+  margin-top:10px
+}
+
+.container video{
+  border-radius: 10px;
+  max-width: 100%;
+}
+
