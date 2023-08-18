@@ -15,7 +15,6 @@ function Chat(props) {
       <div className='message-content'>
         <div className='sent'>
           <div className='center'>
-            <span className='username'>{userName}</span>
             <span className='date'>{formattedCreatedAt}</span>
           </div>
           <Messages props={props} />
@@ -28,7 +27,6 @@ function Chat(props) {
       <div className='message-content-recieved'>
         <div className='recieved'>
           <div className='center'>
-            <span className='username'>{userName}</span>
             <span className='date'>{formattedCreatedAt}</span>
           </div>
           <Messages props={props} />
