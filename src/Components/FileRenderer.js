@@ -10,7 +10,7 @@ const FileRenderer = ({file}) => {
 	}
 	else if (fileType === 'video'){
 		return(
-			<video controls>
+			<video controls loop>
 				<source src={fileURL} type={file.type}/>
 				Your browser does not support the media tags
 			</video>
@@ -18,7 +18,7 @@ const FileRenderer = ({file}) => {
 	}
 	else if (fileType === 'audio'){
 		return(
-			<audio controls>
+			<audio controls loop>
 				<source src={fileURL} type={file.type}/>
 				Your browser does not support the media tags
 			</audio>

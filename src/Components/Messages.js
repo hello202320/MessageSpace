@@ -22,14 +22,14 @@ const Messages = ({props}) => {
         
         }
         {video && 
-          <video controls>
+          <video controls loop>
             <source src={video}/>
             Your browser does not support the media tags
           </video>
         }
         {
           audio &&  
-          <audio controls>
+          <audio controls loop>
             <source src={audio}/>
             Your browser does not support the media tags
           </audio>
