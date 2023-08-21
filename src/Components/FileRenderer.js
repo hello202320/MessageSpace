@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactPlayer from 'react-player';
 const FileRenderer = ({file}) => {
 	const fileType = getFileType(file)
 	const fileURL = URL.createObjectURL(file)
@@ -10,18 +10,12 @@ const FileRenderer = ({file}) => {
 	}
 	else if (fileType === 'video'){
 		return(
-			<video controls loop>
-				<source src={fileURL} type={file.type}/>
-				Your browser does not support the media tags
-			</video>
+			<ReactPlayer url={fileURL} controls loop />
 		)
 	}
 	else if (fileType === 'audio'){
 		return(
-			<audio controls loop>
-				<source src={fileURL} type={file.type}/>
-				Your browser does not support the media tags
-			</audio>
+			<ReactPlayer url={fileURL} controls loop />
 		)
 	}
 	else {
