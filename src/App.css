@@ -225,5 +225,6 @@ a {
 .container video{
   border-radius: 10px;
   max-width: 100%;
+  outline: none;
 }
 
