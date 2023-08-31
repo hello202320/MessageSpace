@@ -41,11 +41,11 @@ https://messeng3r.netlify.app/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/hello202320/firebase.git
+   git clone https://github.com/hello202320/MessageSpace.git
    ```
 
    ```bash
-   cd firebase
+   cd MessageSpace
    ```
 
 2. Install dependencies:
